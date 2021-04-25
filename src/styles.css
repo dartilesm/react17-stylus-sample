@@ -2,6 +2,58 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+.categories-list {
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  color: #44535b;
+}
+.categories-list .categories-list__item {
+  padding: 0 20px;
+}
+.footer {
+  position: relative;
+  height: 86px;
+  width: 100%;
+  color: #44535b;
+}
+.footer .footer__container {
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 10px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px -2px 4px rgba(140,162,174,0.2);
+}
+.footer .footer__container .footer__icon-left,
+.footer .footer__container .footer__icon-right {
+  display: inline-flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.footer .footer__icon-center {
+  top: -5px;
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.footer .footer__icon-center .footer__icon-center-container {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(140,162,174,0.2);
+}
 .header {
   position: relative;
   border-radius: 0 0 20px 20px;
@@ -53,6 +105,21 @@
   width: 80%;
   bottom: -20px;
 }
+.icon {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon .icon__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.icon .icon__name--selected {
+  color: #00af71;
+}
 .search {
   width: 100%;
   height: 45px;
@@ -80,69 +147,6 @@
   width: 45px;
   background: #ffc431;
   border-radius: 12px;
-}
-.store-location {
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
-  color: #44535b;
-}
-.store-location.store-location--margin-top-40 {
-  margin-top: 40px;
-}
-.store-location .store-location__link {
-  color: #00af71 !important;
-  text-decoration: none;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-}
-.store-location .store-location__address {
-  padding-left: 5px;
-}
-.categories-list {
-  padding: 0 20px;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  color: #44535b;
-}
-.categories-list .categories-list__item {
-  padding: 0 20px;
-}
-.icon {
-  display: flex;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.icon.icon--rounded-shadow {
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgba(140,162,174,0.2);
-}
-.icon.icon--padding-horizontal-20 {
-  padding: 0 20px;
-}
-.icon .icon__name {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.icon .icon__name--selected {
-  color: #00af71;
-}
-.stores-list {
-  display: flex;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .store-card {
   position: relative;
@@ -224,45 +228,32 @@
   padding: 0px 5px;
   color: #fff;
   font-size: 0.6em;
+  text-transform: uppercase;
 }
-.footer {
-  position: relative;
-  height: 86px;
+.stores-list {
+  display: flex;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.store-location {
   width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
   color: #44535b;
 }
-.footer .footer__container {
-  position: absolute;
-  bottom: 0;
-  height: calc(100% - 10px);
-  width: 100%;
+.store-location.store-location--margin-top-40 {
+  margin-top: 40px;
+}
+.store-location .store-location__link {
+  color: #00af71 !important;
+  text-decoration: none;
+  font-size: 1.2em;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0px -2px 4px rgba(140,162,174,0.2);
+  align-items: center;
+  font-weight: 500;
 }
-.footer .footer__container .footer__icon-left,
-.footer .footer__container .footer__icon-right {
-  display: inline-flex;
-  width: 40%;
-  justify-content: space-around;
+.store-location .store-location__address {
+  padding-left: 5px;
 }
-.footer .footer__icon-center {
-  top: -5px;
-  width: 20%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-.footer .footer__icon-center .footer__icon-center-container {
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgba(140,162,174,0.2);
-}
-/*# sourceMappingURL=styles.css.map */

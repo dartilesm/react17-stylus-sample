@@ -1,4 +1,4 @@
-import { Icon } from "./Icon";
+import { Icon } from "../Icon/Index";
 
 export const CategoriesList = ({iconList = []}) => <section className="categories-list">
     { 

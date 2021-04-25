@@ -1,9 +1,9 @@
-import CartIcon from '../assets/footer/cart.svg'
-import StoreIcon from '../assets/footer/store.png'
-import LocationIcon from '../assets/footer/location.svg'
-import MoneyIcon from '../assets/footer/money.svg'
-import UserIcon from '../assets/footer/user.svg'
-import { Icon } from './Icon'
+import CartIcon from '../../assets/footer/cart.svg'
+import StoreIcon from '../../assets/footer/store.png'
+import LocationIcon from '../../assets/footer/location.svg'
+import MoneyIcon from '../../assets/footer/money.svg'
+import UserIcon from '../../assets/footer/user.svg'
+import { Icon } from '../Icon/Index'
 
 
 const LEFT_ICON_LIST = [

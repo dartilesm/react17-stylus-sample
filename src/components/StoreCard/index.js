@@ -1,5 +1,5 @@
-import StarIcon from '../assets/star.png'
-import DeliveryIcon from '../assets/delivery.svg'
+import StarIcon from '../../assets/star.png'
+import DeliveryIcon from '../../assets/delivery.svg'
 
 export const StoreCard = ({ store, title, discount, category, stars, deliveryTime }) => <div className="store-card store-card--margin-15">
     <div className="store-card__container">

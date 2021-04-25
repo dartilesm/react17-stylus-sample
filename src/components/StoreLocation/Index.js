@@ -1,4 +1,4 @@
-import LocationIcon from '../assets/location/ubicacion.png'
+import LocationIcon from '../../assets/location/ubicacion.png'
 
 export const StoreLocation = ({location = 'Caracas, Ajuro'}) => <section className="store-location store-location--margin-top-40">
 <h2 className="store-location__text">

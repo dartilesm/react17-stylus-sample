@@ -1,12 +1,12 @@
-import { CategoriesList } from './components/CategoriesList';
-import { Header } from './components/Header';
-import { StoreLocation } from './components/StoreLocation';
+import { CategoriesList } from './components/CategoriesList/Index';
+import { Header } from './components/Header/Index';
+import { StoreLocation } from './components/StoreLocation/Index';
 import MarketImg from "./assets/categories/super.png"
 import ButcherShopImg from "./assets/categories/carniceria.png"
 import PharmaImg from "./assets/categories/pharma.png"
 import './styles.css';
-import { StoreList } from './components/StoresList';
-import { Footer } from './components/Footer';
+import { StoreList } from './components/StoreList/Index';
+import { Footer } from './components/Footer/Index';
 
 const ICON_LIST = [
   {

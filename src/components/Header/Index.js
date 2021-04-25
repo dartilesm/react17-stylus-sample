@@ -1,5 +1,5 @@
-import LogoImg from '../assets/logo.png'
-import { SearchField } from './SearchField'
+import LogoImg from '../../assets/logo.png'
+import { SearchField } from '../SearchField/Index'
 
 export const Header = () => <header className="header">
     <div className="header__logo-container">
